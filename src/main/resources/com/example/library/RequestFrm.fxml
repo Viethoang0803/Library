@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="568.0" prefWidth="917.0" stylesheets="@../../../primer-light.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.controllers.RequestController">
+   <children>
+      <TableView fx:id="tbRequest" layoutY="74.0" prefHeight="371.0" prefWidth="980.0" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="92.8888897895813" text="STT">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/tabel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TableColumn>
+          <TableColumn fx:id="colReaderName" prefWidth="148.4443817138672" text="Tên độc giả">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/tabel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TableColumn>
+            <TableColumn fx:id="colBookId" prefWidth="129.5" text="Mã sách">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../img/tabel.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </TableColumn>
+            <TableColumn fx:id="colBookName" prefWidth="189.0" text="Tên sách">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/tabel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TableColumn>
+            <TableColumn fx:id="colBorrowDate" prefWidth="149.5" text="Ngày mượn">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/tabel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TableColumn>
+            <TableColumn fx:id="colReturnDate" prefWidth="159.5" text="Ngày trả">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/tabel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TableColumn>
+            <TableColumn fx:id="colSelect" prefWidth="44.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnApprove" layoutX="359.0" layoutY="488.0" mnemonicParsing="false" text="Chấp nhận" />
+      <Button fx:id="btnReject" layoutX="487.0" layoutY="488.0" mnemonicParsing="false" onAction="#onClickReject" prefHeight="36.0" prefWidth="77.0" text="Từ chối" />
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="282.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.5" minWidth="10.0" prefWidth="82.39998779296874" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="200.80001220703124" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="26.0" prefWidth="86.0" text="Tìm kiếm:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSearch" onKeyPressed="#onSearch" prefHeight="36.0" prefWidth="196.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
