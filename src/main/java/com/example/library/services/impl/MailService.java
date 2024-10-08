@@ -65,11 +65,7 @@ public class MailService {
         executor.shutdown();
     }
 
-//    public static void main(String[] args) {
-//        MailService mailService = new MailService("smtp.gmail.com");
-//        mailService.sendMail(List.of("thinhtran383.au@gmail.com"), "Test", "<h1>Test<h1>");
-//        mailService.shutdown();
-//    }
+
 
 
 }

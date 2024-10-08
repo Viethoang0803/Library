@@ -127,6 +127,6 @@ public class DashboardController implements Initializable {
     }
 
     public void onClickChangePassword(ActionEvent actionEvent) throws IOException {
-        App.setRootPop("ChangePassFrm", "Change password", false);
+        App.setRootPop("ChangePassFrm", "Đổi mật khẩu", false);
     }
 }

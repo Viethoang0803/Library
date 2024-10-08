@@ -20,9 +20,9 @@ public class EmailController {
         System.out.println(txtEmail.getText());
         try {
             accountService.resetPassword(txtEmail.getText());
-            AlertUtil.showAlert(Alert.AlertType.INFORMATION, "Success", null, "Reset password successfully, check your email for more information!");
+            AlertUtil.showAlert(Alert.AlertType.INFORMATION, "Thành công", null, "Đặt lại mật khẩu thành công, hãy kiểm tra email của bạn để biết thêm thông tin!");
         } catch (Exception e) {
-            AlertUtil.showAlert(javafx.scene.control.Alert.AlertType.ERROR, "Error", null, e.getMessage());
+            AlertUtil.showAlert(javafx.scene.control.Alert.AlertType.ERROR, "Lỗi", null, e.getMessage());
         }
     }
 }

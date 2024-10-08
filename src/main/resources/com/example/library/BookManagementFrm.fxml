@@ -150,7 +150,7 @@
          </children>
       </GridPane>
       <Button fx:id="btnAdd" layoutX="66.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="36.0" prefWidth="106.0" text="Thêm sách" />
-      <Button fx:id="btnDelete" layoutX="573.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="36.0" prefWidth="106.0" text="Delete Book" />
+      <Button fx:id="btnDelete" layoutX="573.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="36.0" prefWidth="106.0" text="Xóa sách" />
       <Button fx:id="btnUpdate" layoutX="226.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickUpdate" prefHeight="36.0" prefWidth="115.0" text="Cập nhật sách" />
       <Button fx:id="btnRefresh" layoutX="395.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickRefresh" prefHeight="36.0" prefWidth="106.0" text="Làm mới" />
       <GridPane layoutX="10.0" layoutY="14.0" prefHeight="30.0" prefWidth="301.0">
@@ -183,6 +183,6 @@
             <DatePicker fx:id="dpReturn" GridPane.columnIndex="1" />
          </children>
       </GridPane>
-      <Button fx:id="btnRequestBorrow" layoutX="573.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickRequest" prefHeight="36.0" prefWidth="127.0" text="Request Borrow" />
+      <Button fx:id="btnRequestBorrow" layoutX="573.0" layoutY="684.0" mnemonicParsing="false" onAction="#onClickRequest" prefHeight="36.0" prefWidth="127.0" text="yêu cầu mượn" />
    </children>
 </AnchorPane>

@@ -51,8 +51,8 @@ public class StaticController implements Initializable {
 
     private void drawChart() {
         pieLate.getData().clear();
-        pieLate.getData().add(new PieChart.Data("Total Borrow", staticService.getTotalBorrow()));
-        pieLate.getData().add(new PieChart.Data("Total Return Late", staticService.getTotalLate()));
+        pieLate.getData().add(new PieChart.Data("Tổng sách đã trả", staticService.getTotalBorrow()));
+        pieLate.getData().add(new PieChart.Data("Tổng sách trả muộn", staticService.getTotalLate()));
 
 
     }

@@ -87,7 +87,7 @@ public class AccountServiceImpl implements IAccountService {
                     Map.of(email, String.format("Xin chào <b>%s</b>," +
                             " mật khẩu mới của bạn  <b>%s</b> và tên tài khoản <b>%s</b>," +
                             " xin vui lòng đổi sau khi đăng nhập lại", name, password, username)),
-                    "Yêu cầu thay đổi mật khẩu"
+                    "Change password"
 
             );
             String passwordHash = PasswordHasher.hashPassword(password);

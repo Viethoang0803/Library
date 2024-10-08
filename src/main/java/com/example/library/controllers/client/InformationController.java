@@ -86,12 +86,12 @@ public class InformationController implements Initializable {
 
     public void onClickSave(ActionEvent actionEvent) {
         if (!Regex.isValid("EMAIL", txtEmail.getText())) {
-            AlertUtil.showAlert(Alert.AlertType.ERROR, "Error", null, "Email is invalid");
+            AlertUtil.showAlert(Alert.AlertType.ERROR, "Lỗi", null, "Email không hợp lệ");
             return;
         }
 
         if (!Regex.isValid("PHONE_NUMBER", txtPhoneNumber.getText())) {
-            AlertUtil.showAlert(Alert.AlertType.ERROR, "Error", null, "Phone number is invalid");
+            AlertUtil.showAlert(Alert.AlertType.ERROR, "Lỗi", null, "Số điện thoại không hợp lệ");
             return;
         }
 
@@ -109,7 +109,7 @@ public class InformationController implements Initializable {
         try {
             readerService.updateReader(reader);
         } catch (Exception e) {
-            AlertUtil.showAlert(Alert.AlertType.ERROR, "Error", null, e.getMessage());
+            AlertUtil.showAlert(Alert.AlertType.ERROR, "lỗi", null, e.getMessage());
             return;
         }
 

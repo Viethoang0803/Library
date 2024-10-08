@@ -96,7 +96,7 @@ public class RegisterController {
                 AlertUtil.showAlert(Alert.AlertType.ERROR, "Lỗi", null, "Đăng kí thất bại, tài khoản đăng kí đã tồn tại!");
             }
         } catch (Exception e) {
-            AlertUtil.showAlert(Alert.AlertType.ERROR, "Error", null, e.getMessage());
+            AlertUtil.showAlert(Alert.AlertType.ERROR, "Lỗi", null, e.getMessage());
         }
     }
 }

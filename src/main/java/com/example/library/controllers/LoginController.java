@@ -80,6 +80,6 @@ public class LoginController implements Initializable {
 
 
     public void onClickResetPassword(ActionEvent actionEvent) throws IOException {
-        App.setRootPop("EmailFrm", "Reset password", false);
+        App.setRootPop("EmailFrm", "Đặt lại mật khẩu", false);
     }
 }

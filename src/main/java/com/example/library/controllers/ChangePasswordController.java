@@ -45,7 +45,7 @@ public class ChangePasswordController {
             AlertUtil.showAlert(Alert.AlertType.INFORMATION, "Thông báo", null, "Thay đổi mật khẩu thành công!");
 
         } catch (Exception e) {
-            AlertUtil.showAlert(Alert.AlertType.ERROR, "Error", null, e.getMessage());
+            AlertUtil.showAlert(Alert.AlertType.ERROR, "Lỗi", null, e.getMessage());
 
         }
     }
